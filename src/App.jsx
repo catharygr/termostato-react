@@ -1,4 +1,4 @@
-import Termostato from "./componentes/Termostato";
+import Termostato from "./componentes/Termostate.css/Termostato";
 
 function App() {
   return (
