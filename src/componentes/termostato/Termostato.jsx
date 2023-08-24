@@ -1,8 +1,9 @@
 import { ChevronDown, ChevronUp } from "react-feather";
+import styles from "./Termostato.module.css";
 
 export default function Termostato() {
   return (
-    <div>
+    <div className={styles.termostato}>
       <h1>Termostato</h1>
       <div>40</div>
       <div>
