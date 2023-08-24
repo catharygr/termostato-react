@@ -1,7 +1,9 @@
+import Termostato from "./componentes/Termostato";
+
 function App() {
   return (
     <main>
-      <h1>React App</h1>;
+      <Termostato />
     </main>
   );
 }
