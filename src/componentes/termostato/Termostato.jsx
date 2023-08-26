@@ -1,5 +1,6 @@
 import { ChevronDown, ChevronUp } from "react-feather";
 import styles from "./Termostato.module.css";
+import ToggleBoton from "../toggleboton/ToggleBoton";
 
 export default function Termostato() {
   return (
@@ -7,10 +8,7 @@ export default function Termostato() {
       <h1>Termostato</h1>
       <div className={styles.display}>40</div>
       <div className={styles.grupo_botones}>
-        <div className={styles.grupo}>
-          <label htmlFor=""></label>
-          <input type="text" name="" id="" placeholder="Modo" />
-        </div>
+        <ToggleBoton />
         <div className={styles.grupo_flechas}>
           <button className={styles.btn}>
             <ChevronDown size={30} />
