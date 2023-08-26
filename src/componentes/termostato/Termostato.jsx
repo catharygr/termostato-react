@@ -12,11 +12,11 @@ export default function Termostato() {
           <input type="text" name="" id="" placeholder="Modo" />
         </div>
         <div className={styles.grupo_flechas}>
-          <button className={styles.btn_down}>
-            <ChevronDown />
+          <button className={styles.btn}>
+            <ChevronDown size={30} />
           </button>
-          <button className={styles.btn_up}>
-            <ChevronUp />
+          <button className={styles.btn}>
+            <ChevronUp size={30} />
           </button>
         </div>
       </div>
