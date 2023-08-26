@@ -1,5 +1,44 @@
 .termostato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(240, 240, 240);
   border-radius: 20px;
   box-shadow: 0px 5px 0 3px #999;
+  padding: 2rem 5rem;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.display {
+  align-self: stretch;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+  border-radius: 16px;
+  background-color: rgb(32, 49, 39);
+  color: rgb(117, 251, 142);
+  padding: 0.5rem;
+}
+
+.grupo_botones {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+.grupo_flechas {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn_down {
+  background-color: rgb(254, 254, 254);
+  width: 3rem;
+  height: 3rem;
+
+  box-shadow: 0px 5px 0 -1px #999;
 }
