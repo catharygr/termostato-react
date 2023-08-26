@@ -8,7 +8,13 @@ export default function Termostato() {
       <h1>Termostato</h1>
       <div className={styles.display}>40</div>
       <div className={styles.grupo_botones}>
-        <ToggleBoton />
+        <ToggleBoton
+          label="Modo"
+          opciones={[
+            { label: "C", value: "Celsius" },
+            { label: "F", value: "Fahrenheit" },
+          ]}
+        />
         <div className={styles.grupo_flechas}>
           <button className={styles.btn}>
             <ChevronDown size={30} />
