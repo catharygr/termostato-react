@@ -6,6 +6,11 @@ import { useState } from "react";
 export default function Termostato() {
   const [modo, setModo] = useState("celsius");
 
+  function ToggleModo() {
+    const nextMode = modo === "celsius" ? "fahrenheit" : "celsius";
+    setModo(nextMode);
+  }
+
   return (
     <div className={styles.termostato}>
       <h1>Termostato</h1>
@@ -18,6 +23,7 @@ export default function Termostato() {
             { label: "F", value: "fahrenheit" },
           ]}
           seleccionarValue={modo}
+          unCambio={ToggleModo}
         />
         <div className={styles.grupo_flechas}>
           <button className={styles.btn}>

@@ -2,9 +2,14 @@
 import styles from "./ToggleBoton.module.css";
 import { useId } from "react";
 
-export default function ToggleBoton({ label, opciones, seleccionarValue }) {
+export default function ToggleBoton({
+  label,
+  opciones,
+  seleccionarValue,
+  unCambio,
+}) {
   const id = useId();
-  console.log(id);
+
   return (
     <div className={styles.container}>
       <div className={styles.toggle_label}>{label}</div>
@@ -21,7 +26,7 @@ export default function ToggleBoton({ label, opciones, seleccionarValue }) {
                 name={id}
                 value={value}
                 checked={esSeleecionada}
-                onChange={() => {}}
+                onChange={unCambio}
               />
               {label}
             </label>
